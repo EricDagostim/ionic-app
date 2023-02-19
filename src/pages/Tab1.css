@@ -1,0 +1,10 @@
+.header-index{
+    margin-bottom: 680px !important;
+}
+
+.header-row-content{
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

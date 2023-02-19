@@ -1,16 +1,22 @@
 import { Redirect, Route } from 'react-router-dom';
 import {
   IonApp,
+  IonAvatar,
+  IonButton,
+  IonHeader,
   IonIcon,
   IonLabel,
   IonRouterOutlet,
+  IonRow,
   IonTabBar,
   IonTabButton,
   IonTabs,
+  IonTitle,
+  IonToolbar,
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { addCircleOutline, notificationsOutline, analyticsOutline} from 'ionicons/icons';
+import { addCircleOutline, notificationsOutline, analyticsOutline, settingsOutline} from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -30,17 +36,21 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-
 /* Theme variables */
 import './theme/variables.css';
 
 // import icons
 // import { notificationsOutline } from 'ionicons'
 
+
 setupIonicReact();
+
 
 const App: React.FC = () => (
   <IonApp>
+      
+
+
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
