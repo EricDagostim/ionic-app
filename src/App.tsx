@@ -18,7 +18,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { addCircleOutline, notificationsOutline, analyticsOutline, settingsOutline} from 'ionicons/icons';
 import Solicitacoes from './pages/Solicitacoes';
-import Tab2 from './pages/Tab2';
+import Historico from './pages/Historico';
 import Tab3 from './pages/Tab3';
 import Perfil from './pages/Perfil'
 
@@ -63,15 +63,15 @@ const App: React.FC = () => (
           <Route exact path="/solicitacoes">
             <Solicitacoes />
           </Route>
-          <Route exact path="/tab2">
-            <Tab2 />
+          <Route exact path="/historico">
+            <Historico />
           </Route>
           <Route path="/tab3">
             <Tab3 />
           </Route>
 
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/Perfil" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -79,7 +79,7 @@ const App: React.FC = () => (
             <IonIcon icon={notificationsOutline} />
             <IonLabel>Solicitações</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="historico" href="/historico">
             <IonIcon icon={analyticsOutline} />
             <IonLabel>Histórico</IonLabel>
           </IonTabButton>

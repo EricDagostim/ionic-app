@@ -1,13 +1,13 @@
-import { IonAvatar, IonButton, IonContent, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Tab2.css';
+import { IonAvatar, IonButton, IonContent, IonGrid, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import './Historico.css';
+import './Globals.css';
 
 import {settingsOutline} from 'ionicons/icons';
 
 const avatarUrl = "./assets/img/profile-image.jpg";
 const name = 'Éric';
 
-const Tab2: React.FC = () => {
+const Historico: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -25,15 +25,16 @@ const Tab2: React.FC = () => {
       </IonToolbar>
     </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+
+          <IonGrid>
+            <IonRow>
+              <h1>Histórico de Transações</h1>
+            </IonRow>
+          </IonGrid>
+        
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Historico;

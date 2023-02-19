@@ -1,6 +1,7 @@
 import { IonAvatar, IonButton, IonContent, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab3.css';
+// import './Tab3.css';
+import './Globals.css';
 
 import {settingsOutline} from 'ionicons/icons';
 
@@ -16,7 +17,7 @@ const Tab3: React.FC = () => {
             <IonAvatar>
               <img src={avatarUrl} alt="avatar" />
             </IonAvatar>
-            <IonTitle>Olá, {name}!</IonTitle>
+             <IonTitle>Olá, {name}!</IonTitle>
             
             <IonButton fill="clear" href='perfil'>
               <IonIcon icon={settingsOutline} />

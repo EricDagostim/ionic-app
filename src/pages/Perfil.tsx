@@ -1,10 +1,13 @@
-import { IonAvatar, IonBreadcrumb, IonBreadcrumbs, IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonBreadcrumb, IonBreadcrumbs, IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTitle, IonToggle, IonToolbar } from '@ionic/react';
 
 
 import {settingsOutline, arrowBackOutline, checkmarkCircleOutline, createOutline, alertCircleOutline} from 'ionicons/icons';
-
+import './Perfil.css';
+import './Globals.css';
 const avatarUrl = "./assets/img/profile-image.jpg";
 const name = 'Éric';
+
+
 
 
 const Perfil: React.FC = () => {
@@ -35,6 +38,14 @@ const Perfil: React.FC = () => {
             <IonAvatar>
               <img src={avatarUrl} alt="avatar" />
             </IonAvatar>
+
+            <IonItem>
+              <IonLabel>Modo Escuro</IonLabel>
+              <IonToggle>
+                
+              </IonToggle>
+            </IonItem>
+
             <IonList inset={true}>
               <IonItem>
                 <IonLabel>Éric Nascimento</IonLabel>

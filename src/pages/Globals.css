@@ -10,3 +10,19 @@
     justify-content: space-between;
 }
 
+.badge-primary{
+    color: #3880ff;
+    background-color: #3880ff1d;
+}
+
+.badge-warning{
+    background-color: #ffc6091d;
+    color: #ffc409;
+}
+
+.badge-danger{
+    color: #cf3c4f;
+    background-color: #cf3c4f1d;
+
+}
+

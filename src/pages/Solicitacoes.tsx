@@ -1,12 +1,15 @@
 import { IonContent, IonBadge, IonPage, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonGrid, IonRow, IonHeader, IonToolbar, IonAvatar, IonTitle, IonIcon} from '@ionic/react';
-import './Tab1.css';
+import './Solicitacoes.css';
+import './Globals.css';
 
 import {settingsOutline} from 'ionicons/icons';
 
 const avatarUrl = "./assets/img/profile-image.jpg";
 const name = 'Éric';
 
-const Tab1: React.FC = () => {
+
+
+const Solicitacoes: React.FC = () => {
 
   return (
     <IonPage>
@@ -20,7 +23,8 @@ const Tab1: React.FC = () => {
             
             <IonButton fill="clear" href='perfil'>
               <IonIcon icon={settingsOutline} />
-            </IonButton>
+            </IonButton>  
+
           </IonRow>
       </IonToolbar>
     </IonHeader>
@@ -29,20 +33,25 @@ const Tab1: React.FC = () => {
         <IonGrid>
           <IonRow>
 
-           <IonCard>
-             <IonCardHeader>
-               <IonBadge color="primary">Solicitação de Documento</IonBadge>
-               <IonCardTitle>Matheus Fernandes</IonCardTitle>
-             </IonCardHeader>
-
-            <IonCardContent>
-              Favor enviar documentos relativos a posse do imóvel.
-            </IonCardContent>
-           </IonCard>  
            
+            <IonCard>
+              <IonCardHeader>
+                <IonBadge className="badge-warning">Solicitação de Documento</IonBadge>
+                <IonCardTitle>Matheus Fernandes</IonCardTitle>
+              </IonCardHeader>
+
+              <IonCardContent>
+                Favor enviar documentos relativos a posse do imóvel.
+              </IonCardContent>
+              <IonButton fill='clear'>
+              Ver
+              </IonButton>
+            </IonCard>  
+           
+
            <IonCard>
              <IonCardHeader>
-               <IonBadge color="warning">Solicitação de Pagamento</IonBadge>
+               <IonBadge className="badge-primary">Solicitação de Pagamento</IonBadge>
                <IonCardTitle>Maurício Costa:</IonCardTitle>
              </IonCardHeader>
 
@@ -53,7 +62,7 @@ const Tab1: React.FC = () => {
 
            <IonCard>
               <IonCardHeader>
-               <IonBadge color="danger">Revizão de Documentos</IonBadge>
+               <IonBadge className="badge-danger">Revizão de Documentos</IonBadge>
                <IonCardTitle>Júlia Souza:</IonCardTitle>
               </IonCardHeader>
 
@@ -72,4 +81,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Solicitacoes;
