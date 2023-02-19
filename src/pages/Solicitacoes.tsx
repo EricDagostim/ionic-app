@@ -10,7 +10,7 @@ const Tab1: React.FC = () => {
 
   return (
     <IonPage>
-      <IonHeader className='header-index'>
+      <IonHeader>
       <IonToolbar>
           <IonRow className="header-row-content">
             <IonAvatar>
@@ -18,7 +18,7 @@ const Tab1: React.FC = () => {
             </IonAvatar>
             <IonTitle>Olá, {name}!</IonTitle>
             
-            <IonButton fill="clear" href='tab2'>
+            <IonButton fill="clear" href='perfil'>
               <IonIcon icon={settingsOutline} />
             </IonButton>
           </IonRow>
@@ -31,17 +31,13 @@ const Tab1: React.FC = () => {
 
            <IonCard>
              <IonCardHeader>
-               <IonBadge color="primary">15min</IonBadge>
-               <IonCardTitle>Solicitação de Pagamento</IonCardTitle>
-               <IonCardSubtitle>de Maurício Costa</IonCardSubtitle>
+               <IonBadge color="primary">Solicitação de Documento</IonBadge>
+               <IonCardTitle>Matheus Fernandes</IonCardTitle>
              </IonCardHeader>
 
             <IonCardContent>
-              Solicitação referente à entrada acordada de 15% do valor do veículo.
+              Favor enviar documentos relativos a posse do imóvel.
             </IonCardContent>
-
-            <IonButton fill="clear" color="medium">Lembrar</IonButton>
-              <IonButton fill="solid" color="primary">Abrir</IonButton>
            </IonCard>  
            
            <IonCard>

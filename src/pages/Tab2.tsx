@@ -10,7 +10,7 @@ const name = 'Éric';
 const Tab2: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader className='header-index'>
+      <IonHeader>
       <IonToolbar>
           <IonRow className="header-row-content">
             <IonAvatar>
@@ -18,7 +18,7 @@ const Tab2: React.FC = () => {
             </IonAvatar>
             <IonTitle>Olá, {name}!</IonTitle>
             
-            <IonButton fill="clear" href='tab2'>
+            <IonButton fill="clear" href='perfil'>
               <IonIcon icon={settingsOutline} />
             </IonButton>
           </IonRow>
