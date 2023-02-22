@@ -1,6 +1,6 @@
 import { IonAvatar, IonButton, IonContent, IonHeader, IonIcon, IonPage, IonRow, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-// import './Tab3.css';
+import './Transacao.css';
 import './Globals.css';
 
 import {settingsOutline} from 'ionicons/icons';
@@ -8,7 +8,7 @@ import {settingsOutline} from 'ionicons/icons';
 const avatarUrl = "./assets/img/profile-image.jpg";
 const name = 'Éric';
 
-const Tab3: React.FC = () => {
+const Transacao: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -26,15 +26,10 @@ const Tab3: React.FC = () => {
       </IonToolbar>
     </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 3</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer name="Tab 3 page" />
+        <h1>Página de Transações</h1>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab3;
+export default Transacao;

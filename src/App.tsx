@@ -19,7 +19,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { addCircleOutline, notificationsOutline, analyticsOutline, settingsOutline} from 'ionicons/icons';
 import Solicitacoes from './pages/Solicitacoes';
 import Historico from './pages/Historico';
-import Tab3 from './pages/Tab3';
+import Transacao from './pages/Transacao';
 import Perfil from './pages/Perfil'
 
 /* Core CSS required for Ionic components to work properly */
@@ -66,8 +66,8 @@ const App: React.FC = () => (
           <Route exact path="/historico">
             <Historico />
           </Route>
-          <Route path="/tab3">
-            <Tab3 />
+          <Route path="/Transacao">
+            <Transacao />
           </Route>
 
           <Route exact path="/">
@@ -83,7 +83,7 @@ const App: React.FC = () => (
             <IonIcon icon={analyticsOutline} />
             <IonLabel>Histórico</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="Transacao" href="/Transacao">
             <IonIcon icon={addCircleOutline} />
             <IonLabel>Criar Transação</IonLabel>
           </IonTabButton>

@@ -1,7 +1,7 @@
 import { IonAvatar, IonBreadcrumb, IonBreadcrumbs, IonButton, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonItem, IonLabel, IonList, IonPage, IonRow, IonTitle, IonToggle, IonToolbar } from '@ionic/react';
 
 
-import {settingsOutline, arrowBackOutline, checkmarkCircleOutline, createOutline, alertCircleOutline} from 'ionicons/icons';
+import {settingsOutline, eye, arrowBackOutline, checkmarkCircleOutline, createOutline, alertCircleOutline} from 'ionicons/icons';
 import './Perfil.css';
 import './Globals.css';
 const avatarUrl = "./assets/img/profile-image.jpg";
@@ -34,10 +34,11 @@ const Perfil: React.FC = () => {
         <IonRow>
           <IonCol>
             
-            
-            <IonAvatar>
-              <img src={avatarUrl} alt="avatar" />
-            </IonAvatar>
+            <IonRow className='align-center m-5'>
+              <IonAvatar className="align-center">
+                <img src={avatarUrl} alt="avatar" />
+              </IonAvatar>
+            </IonRow>
 
             <IonItem>
               <IonLabel>Modo Escuro</IonLabel>
@@ -56,15 +57,23 @@ const Perfil: React.FC = () => {
                 <IonIcon icon={checkmarkCircleOutline} color="success"/>
               </IonItem>
               <IonItem>
-                <IonLabel>Foto com identidade</IonLabel>
+                <IonLabel>Foto de Segurança</IonLabel>
                 <IonIcon icon={alertCircleOutline} color="danger"/>
                 
               </IonItem>
               <IonItem>
-                <IonLabel>Pac-Man</IonLabel>
+                <IonLabel>Notificações</IonLabel>
+                <IonIcon icon={settingsOutline} color="gray"/>
               </IonItem>
               <IonItem>
-                <IonLabel>Super Mario World</IonLabel>
+                <IonLabel>Termos de uso</IonLabel>
+                <IonIcon icon={eye} color="gray"/>
+              </IonItem>
+
+              <IonItem>
+                <IonLabel>ID do perfil</IonLabel>
+                <IonLabel></IonLabel> 
+                <IonLabel>#453#455347*%</IonLabel> 
               </IonItem>
             </IonList>
           
